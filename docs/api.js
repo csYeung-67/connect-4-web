@@ -5,7 +5,7 @@
 // 後端 API 基礎 URL
 // 開發環境：http://localhost:5000
 // 生產環境：需要替換為實際的後端 URL
-const API_BASE_URL = 'https://connect-4-web-uvi0.onrender.com';
+const API_BASE_URL = 'https://connect-4-web-ewnz.onrender.com';
 
 /**
  * 獲取 AI 的下一步移動
