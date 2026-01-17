@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>四子棋遊戲 - Connect 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>四子棋遊戲</h1>
+            <p class="subtitle">Connect 4</p>
+        </header>
+
+        <div class="game-controls">
+            <div class="mode-selection">
+                <label>遊戲模式：</label>
+                <button id="mode-human" class="mode-btn active">人對人</button>
+                <button id="mode-ai" class="mode-btn">人對 AI</button>
+            </div>
+            <button id="new-game-btn" class="btn-primary">新遊戲</button>
+        </div>
+
+        <div class="game-info">
+            <div class="status" id="status">玩家 1 的回合（紅色）</div>
+            <div class="loading" id="loading" style="display: none;">
+                <span class="spinner"></span>
+                <span>AI 思考中...</span>
+            </div>
+        </div>
+
+        <div class="board-container">
+            <div class="board" id="board">
+                <!-- 棋盤將由 JavaScript 動態生成 -->
+            </div>
+        </div>
+
+        <div class="game-result" id="result" style="display: none;">
+            <div class="result-content">
+                <h2 id="result-title"></h2>
+                <button id="play-again-btn" class="btn-primary">再玩一次</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="api.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
